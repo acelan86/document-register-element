@@ -510,9 +510,9 @@ function purge() {
   ) {
     node = targets[i];
     if (!documentElement.contains(node)) {
+      length--;
+      targets.splice(i--, 1);
       verifyAndSetupAndAction(node, DETACHED);
-    } else {
-      restTargets.push(node);
     }
   }
   targets = restTargets;

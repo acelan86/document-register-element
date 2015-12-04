@@ -541,7 +541,7 @@ wru.test(typeof document === 'undefined' ? [] : [
       }), 100);
     }
   }, {
-    name: 'remove more then one CustomElement',
+    name: 'remove more than one CustomElement',
     test: function () {
       var fail = false;
       var a = new XDirect();
